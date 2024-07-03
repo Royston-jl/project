@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cshtcflc6t4uj"]
+
+[ext_resource type="Script" path="res://player/Player.gd" id="1_3h0tw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2gscx"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rfmgx"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(137, 39)
+script = ExtResource("1_3h0tw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CapsuleShape2D_2gscx")
+one_way_collision_margin = 19.5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6, 0.999999)
+scale = Vector2(92, 32)
+texture = SubResource("CanvasTexture_rfmgx")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 177.0
+offset_top = 29.0
+offset_right = 506.0
+offset_bottom = 97.0
+text = "place holder istg"

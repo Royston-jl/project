@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://xtu4fgmmics0"]
+
+[ext_resource type="Script" path="res://main Ui.gd" id="1_r0410"]
+
+[node name="main Ui" type="Node2D"]
+
+[node name="Start" type="Button" parent="."]
+offset_left = 236.0
+offset_top = 20.0
+offset_right = 705.0
+offset_bottom = 165.0
+text = "Start"
+script = ExtResource("1_r0410")
+
+[node name="Return" type="Button" parent="."]
+offset_left = 321.0
+offset_top = 187.0
+offset_right = 643.0
+offset_bottom = 308.0
+text = "Return to main menu"
+
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
+[connection signal="pressed" from="Return" to="Start" method="_on_return_pressed"]

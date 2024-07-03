@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://wmalao2wmyw"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_xallq"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(196, 68)
+motion_mode = 1
+script = ExtResource("1_xallq")
